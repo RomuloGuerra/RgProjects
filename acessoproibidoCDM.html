@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang=pt-br>
+<head>
+  <meta charset=utf-8>
+  <title>Acesso Proibido</title>
+  <style media="screen">
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+p{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 12pt;
+}
+p#paragrafoRodape{
+  color: #000000;
+  font-weight: normal;
+  font-size: 12pt;
+}
+fieldset#pedidoLibera legend{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14pt;
+}
+  header#interface{
+      display: block;
+      border-bottom: 1px solid #17457d;
+      height: 150px;
+      padding: 400px;
+      margin: 300px;
+    }
+  header#cabecalho h1{
+      font-family: Arial sans-serif;
+      color: red;
+      text-align: center;
+      top: 30px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      background-color: rgba(17, 135, 171, 0.5);
+      padding: 3px;
+    }
+
+  header#cabecalho img#face{
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      left: 1200px;
+      top: 30px;
+      box-shadow: 1px 1px 3px #1187ab;
+  }
+  header#cabecalho img#telefone{
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      left: 1240px;
+      top: 30px;
+      box-shadow: 1px 1px 3px #1187ab;
+  }
+  header#cabecalho img#imgLogo{
+    position: absolute;
+    width: 203px;
+    height: 59;
+    left: 60px;
+    top: 12px;
+    box-shadow: 1px 1px 3px #1187ab;
+}
+section#conteudo{
+  width: 1335px;
+  height: 500px;
+  margin: auto;
+  right: 0px;
+  top: 10px;
+  position: relative;
+  border-top: 10px solid #17457d;
+  background-image: url('_imagens/banner-1.jpg');
+  background-repeat: no-repeat;
+  background-size: 1335px 500px;
+  border-bottom: 10px solid #17457d;
+}
+form{
+  width: 500px;
+  margin: auto;
+  background-color: rgba(23, 70, 124, 0.7);
+  float: right;
+
+}
+
+input{
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 13pt;
+  background-color: rgba(255, 255, 255, 0.60);
+  color: #ffffff;
+}
+textarea{
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 13pt;
+  background-color: rgba(255, 255, 255, 0.60);
+}
+
+input:hover, textarea:hover{
+  background-color: #dddddd;
+}
+
+legend{
+  color: #17457d;
+  font-family: sans-serif;
+  font-weight: bold;;
+  font-size: 13pt;
+}
+
+fieldset{
+  border-color: #cecece;
+  margin: 20px;
+}
+footer#rodape{
+  display: block;
+  bottom: 10px;
+}
+footer#rodape p{
+  text-align: center;
+  width: 1250px;
+  height: 50px;
+}
+  </style>
+</head>
+<body>
+  <div id="interface">
+    <header id="cabecalho"> <!-- Cabeçalho do ste-->
+    <title>Acesso Negado</title>
+    <h1 id="aviso" >Acesso Negado</h1>
+    <a href="http://grupocdm.com.br/" target="_blank"><img id="imgLogo" src="_imagens/logo.jpg" alt="Logo do cabeçalho" /></a>
+    <a href="https://www.facebook.com/CentralDeMedicamentos/?ref=ts&fref=ts" target="_blank"><img id="face" src="_imagens/ico-face.jpg" alt="Facebook Grupocdm" /></a>
+    <a href="http://grupocdm.com.br/fale-conosco.php"target="_blank"><img id="telefone" src="_imagens/ico-telefone.jpg" alt="acesso area de contatos Grupocdm" /></a>
+</header>
+  <section id="conteudo">
+
+      <form id="fContatos" action="mailto:guerrarcn@gmail.com" method="post">
+
+        <fieldset id="pedidoLibera"> <legend>Pedido de liberação:</legend>
+          <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="30" maxlength="40" placeholder="Nome Completo"/></p>
+          <p><label for="cEmail">e-mail:</label><input type="text" name="tEmail" id="cEmail" size="30" maxlength="40" placeholder="E-mail"/></p>
+          <p><label for="cMensagem">mensagem:</br></label><textarea type="text" name="tMensagem" id="cMensagem"size="80" maxlength="70" placeholder="Mensagem" cols="40" rows="6"></textarea></p>
+        </fieldset>
+        <input type="image" name="tenviar" src="_imagens/botao-enviar.png" />
+
+      </form>
+
+  </section>
+<footer id="rodape">
+    <p id="paragrafoRodape">
+      Copyright&copy; 2017 - by Rômulo Guerra&reg;<br/>
+      <a href="https://www.facebook.com/romulo.guerra.58" target="_blank" >Facebook</a> |
+      <a href="https://twitter.com/Romulo_Guerra" target="_blank">Twitter</a>
+    </p>
+</footer>
+</div>
+</body>
+</html>
